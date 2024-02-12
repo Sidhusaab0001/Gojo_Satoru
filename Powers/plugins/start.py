@@ -179,7 +179,7 @@ async def commands_menu(_, q: CallbackQuery):
     keyboard = ikb(ou, True)
     try:
         cpt = f"""
-Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Gojo✨.
+Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Shizu✨.
 I'm here to help you manage your group(s)!
 Commands available:
 × /start: Start the bot
@@ -252,7 +252,7 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
+Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Shizu✨.
 I'm here to help you manage your group(s)!
 Commands available:
 × /start: Start the bot
