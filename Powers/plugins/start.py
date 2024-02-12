@@ -113,8 +113,8 @@ Hit /help to find out more about how to use me in my full potential!
 
 Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
 
-            await m.reply_photo
-                photo=str(choice(StartPic)),
+            await m.reply_photo(
+                photo=.choice(StartPic),
                 caption=cpt,
                 reply_markup=(await gen_start_kb(m)),
                 quote=True,
