@@ -152,8 +152,7 @@ async def start(c: Gojo, m: Message):
 async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
-Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
-**Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! 
+**Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! 
 ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ !
 ━━━━━━━━━━━━━━━━━━━━━━
 ❍ ɪ ᴀᴍ sʜɪᴢᴜ ᴀɴᴅ ɪ'ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
