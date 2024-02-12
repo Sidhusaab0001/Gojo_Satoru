@@ -107,11 +107,16 @@ async def start(c: Gojo, m: Message):
                 
         try:
             cpt = f"""
-Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your group(s)!
-Hit /help to find out more about how to use me in my full potential!
+Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! 
+ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ !
+━━━━━━━━━━━━━━━━━━━━━━
+❍ ɪ ᴀᴍ sʜɪᴢᴜ ᴀɴᴅ ɪ'ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
 
-Join my [News Channel](https://t.me/x_sidhu) to get information on all the latest updates."""
+❍ ᴜsᴇʀs » {}
+❍ ᴄʜᴀᴛs » {}
+
+❍ ɪ'ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
+❍ ᴄʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
