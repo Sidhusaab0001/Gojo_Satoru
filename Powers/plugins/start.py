@@ -70,8 +70,8 @@ async def start(c: Gojo, m: Message):
         if len(m.text.strip().split()) > 1:
             help_option = (m.text.split(None, 1)[1]).lower()
 
-            if help_option.startswith("start") and (
-                help_option not in ("start", "start")
+            if help_option.startswith("note") and (
+                help_option not in ("notes", "note")
             ):
                 await get_private_note(c, m, help_option)
                 return
@@ -113,7 +113,7 @@ Hit /help to find out more about how to use me in my full potential!
 
 Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
 
-            await m.reply_photo(
+            await m.reply_photo
                 photo=str(choice(StartPic)),
                 caption=cpt,
                 reply_markup=(await gen_start_kb(m)),
