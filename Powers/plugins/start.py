@@ -70,8 +70,8 @@ async def start(c: Gojo, m: Message):
         if len(m.text.strip().split()) > 1:
             help_option = (m.text.split(None, 1)[1]).lower()
 
-            if help_option.startswith("note") and (
-                help_option not in ("note", "notes")
+            if help_option.startswith("start") and (
+                help_option not in ("start", "start")
             ):
                 await get_private_note(c, m, help_option)
                 return
