@@ -107,7 +107,7 @@ async def start(c: Gojo, m: Message):
                 
         try:
             cpt = f"""
-*Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! 
+**Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! 
 ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ !
 ━━━━━━━━━━━━━━━━━━━━━━
 ❍ ɪ ᴀᴍ sʜɪᴢᴜ ᴀɴᴅ ɪ'ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
@@ -116,7 +116,7 @@ async def start(c: Gojo, m: Message):
 ❍ ᴄʜᴀᴛs » 147
 
 ❍ ɪ'ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
-❍ ᴄʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs*
+❍ ᴄʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs**
   """
 
             await m.reply_photo(
@@ -153,10 +153,16 @@ async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
 Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your group(s)!
-Hit /help to find out more about how to use me in my full potential!
+**Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! 
+ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ !
+━━━━━━━━━━━━━━━━━━━━━━
+❍ ɪ ᴀᴍ sʜɪᴢᴜ ᴀɴᴅ ɪ'ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
 
-Join my [News Channel](http://t.me/x_sidhu) to get information on all the latest updates."""
+❍ ᴜsᴇʀs » 739
+❍ ᴄʜᴀᴛs » 147
+
+❍ ɪ'ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴍᴀɴᴀɢᴍᴇɴᴛ ʙᴏᴛ.
+❍ ᴄʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs**"""
 
         await q.edit_message_caption(
             caption=cpt,
