@@ -118,7 +118,7 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
                 caption=cpt,
                 reply_markup=(await gen_start_kb(m)),
                 quote=True,
-            )
+       
         except UserIsBlocked:
             LOGGER.warning(f"Bot blocked by {m.from_user.id}")
     else:
